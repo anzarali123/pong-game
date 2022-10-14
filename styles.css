@@ -1,56 +1,59 @@
 body {
     margin: 0;
-    background-color: rgb(39,39,39);
+    background-color: rgb(39, 39, 39);
     display: flex;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-
-canvas {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  canvas {
     margin-top: 25px;
     z-index: 10;
-}
-
-.game-over-container {
+  }
+  
+  .game-over-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 500px;
     height: 700px;
     background-color: rgb(56, 56, 56);
     margin-top: -4px;
     z-index: 11;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-}
-
-button {
+  }
+  
+  button {
     cursor: pointer;
-    color: rgb(0,0,0);
-    background-color: rgb(195,195,195);
+    color: rgb(0, 0, 0);
+    background-color: rgb(195, 195, 195);
     border: none;
     height: 50px;
     width: 200px;
     border-radius: 5px;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-button:hover {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  button:hover {
     filter: brightness(80%);
-}
-
-button:active{
+  }
+  
+  button:active {
     transform: scale(0.95);
-}
-button:focus {
+  }
+  
+  button:focus {
     outline: none;
-}
-@media screen and (min-width: 1800px) {
+  }
+  
+  /* Montior and Larger */
+  @media screen and (min-width: 1800px) {
     canvas {
       margin-top: 100px;
     }
@@ -60,6 +63,7 @@ button:focus {
     }
   }
   
+  /* Large Smartphone (Vertical) */
   @media screen and (max-width: 500px) {
     canvas {
       width: 100%;
